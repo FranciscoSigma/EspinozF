@@ -21,10 +21,10 @@ Explicacion de las diferentes partes:
 ---
 
 
-div. 
-{.
-  width: 300px;.
-  border: 15px solid green;.
-  padding: 50px;.
-  margin: 20px;.
+div.  
+{  
+  width: 300px;  
+  border: 15px solid green;  
+  padding: 50px;    
+  margin: 20px;  
 }.
