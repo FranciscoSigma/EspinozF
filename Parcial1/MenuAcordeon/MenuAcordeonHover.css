@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+
+ul > li > ul {
+    display: none;
+}
+
+ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+
+.opcion{
+    background: gray;
+    color:white;
+}
+
+.subOpcion{
+    padding-left: 20px;
+    background: black;
+    color:aliceblue;
+}
