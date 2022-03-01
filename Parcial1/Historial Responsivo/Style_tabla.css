@@ -1,0 +1,14 @@
+
+    table, th, td {
+        border: 2px solid whitesmoke;
+        border-collapse: collapse;
+        background-color: black;
+        color: aliceblue;
+        
+    }
+    th, td {
+        padding: 10px;
+    }
+    th {
+        background-color: grey;
+    }
