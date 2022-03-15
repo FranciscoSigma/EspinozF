@@ -249,3 +249,7 @@ Otra forma de hacer un diseño responsivo es cambiar el porcentaje de la propied
 ## Aprende Flex con... una rana
 
 Quise agregar esto ya que, buscando información de este control encontre este curioso sitio web para aprender Flex de forma visual con ayuda de una rana (Froggy). [Aquí esta la página](https://flexboxfroggy.com/#es)
+
+## Cuando puedo usar Flexbox y cuando no puedo usarlo?
+
+[En esta página](https://www.smashingmagazine.com/2018/10/flexbox-use-cases/) vienen a detalle casos de uso de Flexbox, con motivos para cuando usarlo y cuando no usarlo.
