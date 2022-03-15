@@ -216,4 +216,32 @@ Los principales como Chrome, firefox, egde y safari soportan Flexbox. Puede ver 
 
  ## Algunos Bugs
 
-Si bien no existen muchos bugs en Flexbox, Philip Walton y Greg Whitworth tienen un [repositorio en github](https://github.com/philipwalton/flexbugs) con todos los posibles errores que puede encontrar.
+Si bien no existen muchos bugs en Flexbox, Philip Walton y Greg Whitworth tienen un [repositorio en github](https://github.com/philipwalton/flexbugs) con todos los posibles errores que puede encontrar.  
+
+## Flex Responsivo
+
+Otra forma de hacer un diseño responsivo es cambiar el porcentaje de la propiedad flex de los elementos flex para crear diferentes diseños para diferentes tamaños de pantalla. También tenemos que incluir flex-wrap: wrap; en el contenedor flex para que este ejemplo funcione:
+
+```css
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+/* Diseño responsivo - hace un diseño de una columna en lugar de un diseño de dos columnas */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+```
+
+[Se puede ver de forma visual aquí](https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_responsive2)
