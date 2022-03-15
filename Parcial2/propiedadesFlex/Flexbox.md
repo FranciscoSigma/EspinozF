@@ -245,3 +245,7 @@ Otra forma de hacer un diseño responsivo es cambiar el porcentaje de la propied
 ```
 
 [Se puede ver de forma visual aquí](https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_responsive2)
+
+## Aprende Flex con... una rana
+
+Quise agregar esto ya que, buscando información de este control encontre este curioso sitio web para aprender Flex de forma visual con ayuda de una rana (Froggy). [Aquí esta la página](https://flexboxfroggy.com/#es)
