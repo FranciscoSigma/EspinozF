@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contendedor{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    background-color: grey;
+}
+.contendedor2{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.caja{
+    width: 150px;
+    height: 150px;
+    border: 1px solid burlywood;
+    margin: auto;
+    background-color: rosybrown;
+    display: flex;
+}
