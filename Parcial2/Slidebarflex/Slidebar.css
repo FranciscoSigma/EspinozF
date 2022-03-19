@@ -1,0 +1,157 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: grey;;
+  }
+
+  .titulo{
+    font: bold 30px monospace;
+    padding: 20px;
+    text-align:center;
+    color: blanchedalmond;
+    background-color: rgb(39, 38, 38);
+  }
+  
+  .contenedor {
+    width: auto;
+    height: 44vw;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contentido {
+    font: bold 30px monospace;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+  }
+
+  div.contentido p {
+    text-align:justify;
+    font-size: large;    
+  }
+  
+  .informacioncontenido{
+    display: none;
+    background-color: whitesmoke;
+    width: auto;
+    height: 100%;
+  }
+  
+  div.slidebar {
+    float: left;
+    background-color: rgb(66, 66, 66);
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  a {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    background: rgb(85, 85, 85);
+    color:white;
+    text-decoration: none;
+  }
+  
+  .slidebar > a:hover {
+    background-color: rgb(119, 117, 117);  
+    border-left: 5px solid transparent;
+    transition: .4s all ease-in;
+    color: black;
+  }
+  
+  div.contentido {
+    float:left;
+    width:calc(100% - 200px);
+    background-color: rgb(124, 115, 115);;
+    padding: 16px;
+    height: 100%;
+  }
+  
+  .informacioncontenido { 
+      display: none; 
+    }
+  
+  #opcCracking:target,
+  #opcClean:target,
+  #opcAlgoritmo:target,
+  #opcDesign:target { 
+    display: block;
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 701px){
+    div.slidebar {
+      float: none;
+      width: 100%;
+      height: 10%;
+    }
+  
+    a {
+      float: left;
+      padding: 30px;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .slidebar > a:hover {
+      border-left: 0px solid transparent; 
+      border-top: 15px solid transparent;
+      transition: .4s all ease-in;
+      color: white;
+    }
+  
+    .contentido>.informacioncontenido{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .contenedor {
+      width: 90%;
+      height: 115vw;
+      align-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-top: 2%;
+    }
+  }
+    
+  @media screen and (max-width: 700px) {
+    .slidebar a {
+      text-align: center;
+      width: 100%;
+    }
+  
+    a {
+      text-align: center;
+    }
+    .slidebar>a:hover {
+        border-bottom: 0px solid transparent;
+        border: 1px solid transparent;
+        color: black;
+      }
+    div.slidebar {
+      float:none;
+      text-align: center;
+      width: 100%;
+      height: 300px;
+      flex-direction: column;
+    }
+    
+    .contenedor{
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    div.contentido {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
