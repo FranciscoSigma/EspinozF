@@ -7,31 +7,47 @@
 .contenedor{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(168, 19, 168);
+    background-color: rgb(40, 207, 185);
     
     display: grid;
 
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 15% 70% 15%;
+
+    grid-template-areas: 'header header header'
+                            'section1 section2 section3'
+                            'footer footer footer';
                         
     justify-content: stretch;
     padding: 25px                    
 }
 
 .caja{
-    background-color: blue;
+    background-color: rgb(0, 162, 255);
     text-align: center;
     border: 2.6px solid rgb(122, 57, 206);
     margin: 0.1px;
     vertical-align: middle;
 }
 
-#caja1{
-    grid-column: 1/4;
-    background-color: aqua;
+#header{
+    grid-area: header;
 }
 
-#caja5{
-    grid-column: 1/4;
+#section1{
+    grid-area: section1;
+    background-color: rgb(87, 184, 230);
+}
+#section3{
+    grid-area: section3;
+    background-color: rgb(87, 184, 230);
+}
+#section2{
+    grid-area: section2;
+    background-color: rgb(87, 184, 230);
+}
+
+#footer{
+    grid-area: footer;
     background-color: aquamarine;
 }
